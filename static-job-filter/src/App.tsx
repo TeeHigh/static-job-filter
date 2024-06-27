@@ -1,8 +1,17 @@
-function App() {
+import {useApp} from "./contexts/AppContext"
+import data from "../data.json"
+import React from "react";
+import Background from "./components/Background";
+import Body from "./components/Body";
+import Card from "./components/Card";
 
+const App:React.FC = () =>{
   return (
     <>
-      <h1>hello</h1>
+      <Background />
+      <Body>
+        <Card/>
+      </Body>
     </>
   )
 }
